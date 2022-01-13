@@ -6,11 +6,12 @@ author: "Abe"
 tags:
     - Self-Hosted
     - Raspberry-Pi
-description: ""
+description: "Self hosted home server"
+images:
+    - "/images/pi-with-ssd.jpg"
 aliases: 
     - /self-host/
     - /2021/12/self-host/
-toc: 
 
 ---
 
