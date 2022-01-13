@@ -6,7 +6,7 @@ author: "Abe"
 tags:
     - Self-Hosted
     - Raspberry-Pi
-description: ""
+description: "Raspberry Pi Encrypted Boot With Ssh"
 aliases: 
     - /raspberry-pi-encrypted-boot-with-ssh/
     - /2021/12/raspberry-pi-encrypted-boot-with-ssh/
