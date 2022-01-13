@@ -9,7 +9,7 @@ tags:
     - Cloudflare
 description: "Self Host Without the risk"
 images:
-    - "/images/cf-logo.png"
+    - "/images/cf-logo.jpg"
 github: https://github.com/abe-101/hugo-profile/blob/my-site/website/content/blog/self-hosting-and-securing-web-services-out-of-your-home-with-cloudflare-tunnel.md
 aliases: 
     - /self-hosting-and-securing-web-services-out-of-your-home-with-argo-tunnel/
@@ -42,7 +42,7 @@ Table of Contents
 
 This is where [Cloudflare’s](https://www.cloudflare.com/products/tunnel/) tunnel comes in. It builds a tunnel to cloudflares network. Now all request to your domain get directed through this tunnel to your web-server. all without opening any ports! and your domain simply points to cloudflare.
 
-![cloudflare logo](/images/cf-logo.png)
+![cloudflare logo](/images/cf-logo.jpg)
 
 ## Pre-requisites
 
