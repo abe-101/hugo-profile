@@ -1,5 +1,5 @@
 ---
-title: "Self Hosting and Securing Web Services Out of Your Home With Argo Tunnel"
+title: "Self Hosting and Securing Web Services Out of Your Home With Cloudflare Tunnel"
 date: 2021-12-30T00:49:45-05:00
 draft: false
 author: "Abe"
@@ -10,7 +10,7 @@ tags:
 description: "Self Host Without the risk"
 images:
     - "/images/cf-logo.png"
-github: https://github.com/abe-101/hugo-profile/blob/my-site/website/content/blog/self-hosting-and-securing-web-services-out-of-your-home-with-argo-tunnel.md
+github: https://github.com/abe-101/hugo-profile/blob/my-site/website/content/blog/self-hosting-and-securing-web-services-out-of-your-home-with-cloudflare-tunnel.md
 aliases: 
     - /self-hosting-and-securing-web-services-out-of-your-home-with-argo-tunnel/
 toc: 
@@ -20,7 +20,7 @@ toc:
 Table of Contents
 
 - [Why a tunnel?](#why-a-tunnel)
-- [Cloudflare’s Argo Tunnel](#cloudflares-argo-tunnel)
+- [Cloudflare’s Tunnel](#cloudflares-tunnel)
 - [Pre-requisites](#pre-requisites)
 - [1\. Install](#1-install)
 - [2\. Authenticate](#2-authenticate)
@@ -38,9 +38,9 @@ Table of Contents
 - Another challenge you will face is setting up a dynamic DNS.
 - Finally, when your domain is pointing to your home IP address it is very easy to determine your home location.
 
-## Cloudflare’s Argo Tunnel
+## Cloudflare’s Tunnel
 
-This is where [Cloudflare’s](https://www.cloudflare.com/) argo tunnel comes in. It builds a tunnel to cloudflares network. Now all request to your domain get directed through this tunnel to your web-server. all without opening any ports! and your domain simply points to cloudflare.
+This is where [Cloudflare’s](https://www.cloudflare.com/products/tunnel/) tunnel comes in. It builds a tunnel to cloudflares network. Now all request to your domain get directed through this tunnel to your web-server. all without opening any ports! and your domain simply points to cloudflare.
 
 ![cloudflare logo](/images/cf-logo.png)
 
