@@ -156,5 +156,5 @@ I love building delightful developer experiences."
   recentposts: true
 
   # Blog
-  showdescription: true
+  showdescription: false
   tweet: true
