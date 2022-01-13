@@ -39,7 +39,7 @@ params:
   namecolor: ffc107
   profession: "Sofware Engineer"
   github: "https://github.com/abe-101"
-  gitlab: "https://gitlab.com/abe-101"
+    #gitlab: "https://gitlab.com/abe-101"
   linkedin: "https://linkedin.com/in/abe101"
   twitter: "https://twitter.com/habet_dot_dev"
     #instagram: "https://instagram.com/"
