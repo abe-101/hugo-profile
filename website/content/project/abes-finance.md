@@ -2,12 +2,13 @@
 title: "Abe's finance"
 date: 2022-01-10T11:30:13+05:30
 draft: false
+author: "Abe"
 img: /images/finance.jpg
 description: "Paper Trading WebApp"
 images:
     - "/images/finance.jpg"
 github: https://finance.habet.dev
-featured: /
+featured: https://finance.habet.dev
 ---
 
 
