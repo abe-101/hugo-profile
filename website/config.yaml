@@ -1,10 +1,10 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://habet.dev"
 languageCode: "en-us"
-title: "Hugo-profile"
+title: "Abe's Portfolio"
 theme: "./.."
 relativeURLs: true
 
-googleanalytics: UA-167646412-8
+googleanalytics: UA-216916075-1
 disqusShortname:
 Paginate: 3
 markup:
@@ -17,12 +17,15 @@ taxonomies:
   category: "categories"
 
 enableEmoji: true
+
 params:
   version: 3
   customCSS: false
 
   favicon: "/images/fav.png"
-  description: "A high performance hugo theme for personal portfolio and blog."
+  description: "Abe's personal portfolio and blog."
+  images:
+    - "/images/site-feature-image.jpg"
 
   # Navbar Menus
   customMenus:
@@ -32,39 +35,45 @@ params:
   # home
   disable_home: false
   profile_image: "/images/profile.png"
-  name: "Example name"
+  name: "Abe"
   namecolor: ffc107
-  profession: "Profession"
-  github: "https://github.com"
-  gitlab: "https://gitlab.com"
-  linkedin: "https://linkedin.com"
-  twitter: "https://twitter.com/"
-  instagram: "https://instagram.com/"
-  facebook: "https://facebook.com"
+  profession: "Sofware Engineer"
+  github: "https://github.com/abe-101"
+  gitlab: "https://gitlab.com/abe-101"
+  linkedin: "https://linkedin.com/in/abe101"
+  twitter: "https://twitter.com/habet_dot_dev"
+    #instagram: "https://instagram.com/"
+    #facebook: "https://facebook.com"
 
-  #Custom social links
-  # customSocialLinks:
-  #   - imageURL: "https://hugo-profile.netlify.app/images/fav.png"
-  #     url: "https://gohugo.com"
-  #   - fontAwesomeIconName: "fa fa-envelope"
-  #     url: "https://gmail.com"
-  
+  # Custom social links
+  customSocialLinks:
+    - fontAwesomeIconName: "fab fa-reddit"
+      url: "https://www.reddit.com/user/abe-101/"
+    - fontAwesomeIconName: "fab fa-tumblr"
+      url: "https://abe-101.tumblr.com/"
+    - fontAwesomeIconName: "fab fa-hacker-news"
+      url: "https://news.ycombinator.com/user?id=abe-101"
+    - fontAwesomeIconName: "fa fa-envelope"
+      url: "mailto:admin@habet.dev"
+
+
   # About
   disable_about: false
-  descripe_l1_person: "Hi, I'm Profile, a passionate web developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-  descripe_l2_person: "This is a example template for about section. You can find my works [here](#projects)"
+  descripe_l1_person: "I'm Abe"
+  descripe_l2_person: "A software engineer and open source enthusiast.
+I love building delightful developer experiences."
   skills:
-    - name: CSS
-      percentage: 90
-    - name: Django
-      percentage: 85
-    - name: Hugo
-      percentage: 80
-    - name: React JS
+    - name: Python
       percentage: 70
+    - name: C
+      percentage: 85
+    - name: SQL
+      percentage: 70
+    - name: Smile
+      percentage: 100
 
   # Experience
-  disable_experience: false
+  disable_experience: true
   experience:
     - company: "Google"
       # id: "google-developer"   // use this, when you want to change the id(used for navigation)
@@ -92,7 +101,7 @@ params:
         - point: Created a frontend design for a product.
 
   # Education
-  disable_education: false
+  disable_education: true
   education:
     - degree: "B.tech"
       branch: "Information Technology"
@@ -113,14 +122,14 @@ params:
   # Projects
   disable_projects: false
   projects:
-    - name: "Example project without details"
-      img: /images/project.jpg
-      githublink: "https://github.com/"
-      featuredlink: "/"
-      description: "Description of project"
+    # - name: 
+    #   img: 
+    #   githublink: 
+    #   featuredlink: 
+    #   description: 
 
   # Achievements
-  disable_achievements: false
+  disable_achievements: true
   achievements:
     - title: Competition winner
       description: We are developed a product which can help others.
@@ -140,12 +149,12 @@ params:
   # Contact
   disable_contact: false
   contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-  email: "example@mail.com"
+  email: "abe@habet.dev"
 
   # Footer
   socialiconfooter: true
   recentposts: true
 
   # Blog
-  showdescription: false
+  showdescription: true
   tweet: true
