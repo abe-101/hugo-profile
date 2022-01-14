@@ -12,16 +12,16 @@ featured: https://finance.habet.dev
 ---
 
 
-# This was CS50
+## This was CS50
 
-Building this project challenged my skills. After teaching us python, SQL, HTML CSS and JS it had us build a fully functional web app. A paper trading app. Given just a basic flask app structure with login, logout, price lookup, user database and an error page. We had to build the rest. Which included registering, buying and selling stock, quote, history page and a index page. It was necessary to build more tables in the database to keep track of transactions.
+Building this project challenged my skills. After teaching us python, SQL, HTML CSS and JS it had us build a fully functional web app. A paper trading app. Given just a basic flask app structure with login, logout, price lookup, user database and an error page. We had to build the rest. Which included registering, buying and selling stock, quote, history page and a index page. It was necessary to build more tables in the database to keep track of transactions.  
 
-# Deployment
+## Deployment
 
 Deploying the project brought on its own set of challenges. The staff at Harvard provide a great step by step guide for how to deploy on Heroku. My first mistake was i followed the old docs [here](https://manual50.readthedocs.io/en/latest/heroku.html). When I should have fallowed [these docs](https://cs50.readthedocs.io/heroku/).
 Next using the tool `pgloader` we transfer over from sqlite3 database to a postgresql hosted on Heroku. This caused a few query errors. Spent a day going through the logs and sorting it all out. For instance the db in sqlite auto incremented the user id when registering a new user. For some odd reason after the transfer that no more happened. So I had to recreate the table.
 
-# Check it out
+## Check it out
 
 The last step was to use my own domain. This was as simple as creating a `CNAME` record on a sub domain.
 The only downside is Heroku doesn't provide SSL certificate for free accounts.

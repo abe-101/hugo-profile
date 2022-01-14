@@ -25,24 +25,6 @@ While the steps are written for the Raspberry Pi, they should be easily transfer
 
 This guide operates directly on an image file and therefore does not require an SD card for the setup. The resulting image can be flashed to an SD card as usual.
 
-## Table of Content
-
-- [Raspberry Pi Encrypted Boot with SSH](#raspberry-pi-encrypted-boot-with-ssh)
-  - [Introduction](#introduction)
-  - [Table of Content](#table-of-content)
-  - [Requirements](#requirements)
-  - [On the host](#on-the-host)
-  - [In the chroot](#in-the-chroot)
-    - [Prepare](#prepare)
-    - [Device configuration](#device-configuration)
-    - [Cryptsetup](#cryptsetup)
-    - [SSH](#ssh)
-    - [Build initramfs](#build-initramfs)
-    - [Cleanup](#cleanup)
-  - [On the host](#on-the-host-1)
-  - [On the Raspberry Pi](#on-the-raspberry-pi)
-  - [Avoiding SSH key collisions](#avoiding-ssh-key-collisions)
-  - [Resources](#resources)
 
 ## Requirements
 
