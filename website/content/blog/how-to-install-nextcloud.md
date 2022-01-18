@@ -116,11 +116,6 @@ sudo systemctl restart php7.4-fpm
 sudo systemctl enable php7.4-fpm
 ```
 
-```
-sudo systemctl restart php7.4-fpm
-sudo systemctl enable php7.4-fpm
-```
-
 ## 3\. Install and Configure MariaDB
 
 In this step, we will install the latest MariaDB version and create a new database for the nextcloud installation. The latest version MariaDB packages are available on the repository by default.
