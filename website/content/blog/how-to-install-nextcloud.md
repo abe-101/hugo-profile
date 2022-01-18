@@ -1,7 +1,7 @@
 ---
 title: "How to Install Nextcloud"
 date: 2022-01-12T09:35:54-05:00
-draft: true
+draft: false
 author: "Abe"
 tags:
     - Self-Hosted
@@ -14,9 +14,7 @@ images:
 ---
 
 
-This tutorial has been tested using Debian 11.
-
-Follow [this](https://habet.dev/blog/raspberry-pi-encrypted-boot-with-ssh/) guide to set up an encrypted server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
+If you followed [this](https://habet.dev/blog/raspberry-pi-encrypted-boot-with-ssh/) you now have a server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
 
 Nextcloud is a free (Open Source) Dropbox-like software. The project is written in PHP and JavaScript. It supports many database systems such as MySQL/MariaDB, PostgreSQL, Oracle Database and SQLite.
 
@@ -25,6 +23,8 @@ To allow Synchronization between server, desktop and mobile phone, Nextcloud pro
 Nextcloud is not just a Dropbox clone. It provides additional features like Calendar, Contacts, Scheduled tasks and web forms.
 
 In this tutorial, we will show you how to install and configure the latest Nextcloud release (at the time of writing it's version 23) on a Debian 11 server. We will run Nextcloud with an Nginx web server and PHP7.4-FPM and use MariaDB server as the database system.
+
+This tutorial has been tested using Debian 11.
 
 ## Prerequisite
 
@@ -189,6 +189,9 @@ sudo apt install certbot -y
 ```
 
 Next we will generate the SSL certificate for our domain name “cloud.example.com”:
+
+If you followed [this](https://habet.dev/blog/self-hosting-and-securing-web-services-out-of-your-home-with-cloudflare-tunnel/#4-create-a-configuration-file) giude to set up a Cloudeflare tunnel you will need to add an additional service for this domain.
+
 
 ```
 certbot --standalone -d cloud.example.com
