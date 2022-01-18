@@ -2,12 +2,21 @@
 title: "How to Install Nextcloud"
 date: 2022-01-12T09:35:54-05:00
 draft: true
+author: "Abe"
+tags:
+    - Self-Hosted
+    - Raspberry-Pi
+    - Nextcloud
+description: "Nextcloud: integrated on-premises content collaboration platform"
+images:
+    - "/images/nextcloud-dashboard.png"
+
 ---
 
 
 This tutorial has been tested using Debian 11.
 
-Follow [this](https://habet.dev/blog/raspberry-pi-encrypted-boot-with-ssh/) guide to set up a an encrypted server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
+Follow [this](https://habet.dev/blog/raspberry-pi-encrypted-boot-with-ssh/) guide to set up an encrypted server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
 
 Nextcloud is a free (Open Source) Dropbox-like software. The project is written in PHP and JavaScript. It supports many database systems such as MySQL/MariaDB, PostgreSQL, Oracle Database and SQLite.
 
@@ -15,7 +24,7 @@ To allow Synchronization between server, desktop and mobile phone, Nextcloud pro
 
 Nextcloud is not just a Dropbox clone. It provides additional features like Calendar, Contacts, Scheduled tasks and web forms.
 
-In this tutorial, we will show you how to install and configure the latest Nextcloud release (at the time of writing this, the latest release is 23) on a Debian 11 server. We will run Nextcloud with an Nginx web server and PHP7.4-FPM and use MariaDB server as the database system.
+In this tutorial, we will show you how to install and configure the latest Nextcloud release (at the time of writing it's version 23) on a Debian 11 server. We will run Nextcloud with an Nginx web server and PHP7.4-FPM and use MariaDB server as the database system.
 
 ## Prerequisite
 
@@ -118,13 +127,13 @@ sudo systemctl enable php7.4-fpm
 
 ## 3\. Install and Configure MariaDB
 
-In this step, we will install the latest MariaDB version and create a new database for the nextcloud installation. The latest version MariaDB packages are available on the repository by default.
+In this step, we will install the latest MariaDB version and create a new database for the Nextcloud installation. The latest version MariaDB packages are available on the repository by default.
 
 ```
 sudo apt install mariadb-server -y
 ```
 
-After the installation is complete, start the MariaDB service and enable it to launch everytime at system boot.
+After the installation is complete, start the MariaDB service and enable it to launch every time at system boot.
 
 ```
 sudo systemctl start mariadb
@@ -139,7 +148,7 @@ Run the following command:
 sudo mysql_secure_installation
 ```
 
-And you will be asked for some configuraiton of MariaDB Server. Also, type the new root password for MariaDB Server.
+You will be asked for some configuration of MariaDB Server. Type the new root password for MariaDB Server.
 
 ```
 Enter current password for root (enter for none): Press Enter
@@ -150,8 +159,6 @@ Remove test database and access to it? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
 ```
 
-And the MariaDB root password has been set up.
-
 Next, we will create a new database for nextcloud installation. We will create a new database named ‘nextcloud_db’ with the user ‘nextclouduser’ and password ‘Nextclouduser421@’.
 
 Login to the MySQL shell as a root user with mysql command.
@@ -160,8 +167,9 @@ Login to the MySQL shell as a root user with mysql command.
 sudo mysql -u root -p
 ```
 
-TYPE THE MYSQL ROOT PASSWORD
-Now create the database and user with the password by running following MySQL queries.
+Now create the database and user with a password by running following MySQL queries.
+
+Replace `'Nextclouduser421@'` with your password.
 
 ```
 create database nextcloud_db;
@@ -170,17 +178,17 @@ grant all privileges on nextcloud_db.* to nextclouduser@localhost identified by 
 flush privileges;
 ```
 
-The new database and user for the nextcloud installation has been created.And the new database and user for the nextcloud installation has been created.
+The new database and user for the nextcloud installation has been created.
 
 ## 4\. Genenrate ssl Let’s Encrypt
 
-We will secure Nextcloud using free SSL from Let’s Encrypt. Install the Let’s Encrypt tool:
+We will secure Nextcloud using a free SSL Certificate from Let’s Encrypt. Install the Let’s Encrypt tool:
 
 ```
 sudo apt install certbot -y
 ```
 
-Next we will generate the SSL crtificate for our domain name “cloud.example.com”:
+Next we will generate the SSL certificate for our domain name “cloud.example.com”:
 
 ```
 certbot --standalone -d cloud.example.com
@@ -188,7 +196,7 @@ certbot --standalone -d cloud.example.com
 
 You will be asked for the email address, and it’s used for the renew notification. For the Letsencrypt TOS agreement, type ‘A’ to agree and for the share email address, you can type ‘N’ for No.
 
-The SSL certificates Letsencrypt for the netxcloud domain name has been generated, all located at the ‘/etc/letsencrypt/live/your-domain’ directory.
+The SSL certificates Letsencrypt for the Nextcloud domain name has been generated, all located at the ‘/etc/letsencrypt/live/your-domain’ directory.
 
 ## 5\. Download Nextcloud
 
@@ -199,7 +207,7 @@ cd /var/www/
 sudo wget https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip
 ```
 
-Extract the Nextcloud source code and you will get a new directory ‘netxcloud’, change the ownership of the nextcloud directory to user ‘www-data’.
+Extract the Nextcloud source code and you will get a new directory ‘netxcloud’, change the ownership of the Nextcloud directory to user ‘www-data’.
 
 ```
 sudo unzip nextcloud-23.0.0.zip
@@ -387,7 +395,7 @@ server {
 }
 ```
 
-save and exit.
+Save and exit.
 
 Enable the virtual host and make sure there is no errors:
 
@@ -421,17 +429,20 @@ sudo ufw enable
 sudo status numbered
 ```
 
-And you will get the HTTP port 80 and HTTPS port 443 is on the list.
+And you will see  HTTP port 80 and HTTPS port 443 is on the list.
 
 ## 8\. Nextcloud Post-installation
 
 Open a Browser on your local network and go to the nextclud URL:
 https://cloud.example.com
 
-![nextcloud-admin](images/nextcloud-admin.png)
+![nextcloud-admin](/images/nextcloud-admin.png)
 
-On the top of the page we need to create an admin user for nextcloud. Type in a user name and password. On the 'data folder' type the full of the 'data' dircectory. `/var/www/nextcloud/data`
+On the top of the page we need to create an admin user for Nextcloud. Type in a user name and password. On the 'data folder' type the full of the 'data' directory. `/var/www/nextcloud/data`
 
 On the bottom of the page you will need to enter the database info from step 3. Then click the 'Finish Setup' button.
 
-After the installation is complete, you will get the Nextcloud Dashboard.
+After the installation is complete, you will get the Nextcloud dashboard.
+
+
+![nextcloud-dashboard](/images/nextcloud-dashboard.png)
