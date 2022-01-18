@@ -158,9 +158,9 @@ Login to the MySQL shell as a root user with mysql command.
 
 ```
 sudo mysql -u root -p
-TYPE THE MYSQL ROOT PASSWORD
 ```
 
+TYPE THE MYSQL ROOT PASSWORD
 Now create the database and user with the password by running following MySQL queries.
 
 ```
@@ -223,8 +223,8 @@ There, paste the following configuration.
 
 ```
 upstream php-handler {
-    server 127.0.0.1:9000;
-    #server unix:/var/run/php/php7.4-fpm.sock;
+    #server 127.0.0.1:9000;
+    server unix:/var/run/php/php7.4-fpm.sock;
 }
 
 server {
@@ -425,7 +425,13 @@ And you will get the HTTP port 80 and HTTPS port 443 is on the list.
 
 ## 8\. Nextcloud Post-installation
 
-Open a Browser on your local network and go to the nextclud URL:ss
-Install Nginx webserv
-
+Open a Browser on your local network and go to the nextclud URL:
 https://cloud.example.com
+
+![nextcloud-admin](images/nextcloud-admin.png)
+
+On the top of the page we need to create an admin user for nextcloud. Type in a user name and password. On the 'data folder' type the full of the 'data' dircectory. `/var/www/nextcloud/data`
+
+On the bottom of the page you will need to enter the database info from step 3. Then click the 'Finish Setup' button.
+
+After the installation is complete, you will get the Nextcloud Dashboard.
