@@ -7,7 +7,7 @@ draft: true
 
 This tutorial has been tested using Debian 11.
 
-Once you have your home server set up. Its now time to start utilizing it. In this guide we will be setting up Nextcloud.
+Follow [this](https://habet.dev/blog/raspberry-pi-encrypted-boot-with-ssh/) guide to set up a an encrypted server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
 
 Nextcloud is a free (Open Source) Dropbox-like software. The project is written in PHP and JavaScript. It supports many database systems such as MySQL/MariaDB, PostgreSQL, Oracle Database and SQLite.
 
@@ -19,7 +19,7 @@ In this tutorial, we will show you how to install and configure the latest Nextc
 
 ## Prerequisite
 
-- Debian 11
+- Server running Debian 11 or derivatives
 - Root privileges
 
 ## The process
@@ -75,41 +75,6 @@ And you will get the result as below:
              ├─1328733 nginx: worker process
              └─1328734 nginx: worker process 
 ```
-
-## 2\. Install and Configure PHP7.4-FPM
-
-Install PHP and PHP-FPM packages neede by Nextcloud using the apt command below:
-
-```
-sudo apt install php7.4 php7.4-fpm php7.4-common php7.4-pgsql php7.4-cli php7.4-gd php7.4-json php7.4-curl php7.4-zip php7.4-xml php7.4-mbstring php7.4-bz2 php7.4-intl php7.4-bcmath php7.4-gmp php-imagick php7.4-opcache php7.4-readline
-sudo apt install php-fpm php-curl php-cli php-mysql php-gd php-common php-xml php-json php-intl php-pear php-imagick php-dev php-common php-mbstring php-zip php-soap php-bz2 -y
-```
-
-After the installation is complete, we will configure the php.ini files for php-fpm and php-cli.
-
-```
-sudoedit /etc/php/7.4/fpm/php.ini
-```
-
-Change memory limit to 512M
-
-Change max\_execution\_time to 256
-
-```
-sudoedit /etc/php/7.4/fpm/pool.d/www.conf
-```
-
-Uncomment those lines below:
-
-```
-env[HOSTNAME] = $HOSTNAME
-env[PATH] = /usr/local/bin:/usr/bin:/bin
-env[TMP] = /tmp
-env[TMPDIR] = /tmp
-env[TEMP] = /tmp
-```
-
-Restart the PHP7.4-FPM service and enable it to launch every time on system boot.
 
 ## 2\. Install and Configure PHP7.4-FPM
 
