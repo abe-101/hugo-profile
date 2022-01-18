@@ -17,20 +17,6 @@ toc:
 
 ---
 
-Table of Contents
-
-- [Why a tunnel?](#why-a-tunnel)
-- [Cloudflare’s Tunnel](#cloudflares-tunnel)
-- [Pre-requisites](#pre-requisites)
-- [1\. Install](#1-install)
-- [2\. Authenticate](#2-authenticate)
-- [3\. Create tunnel](#3-create-tunnel)
-- [4\. Create a configuration file](#4-create-a-configuration-file)
-- [5\. Modify your DNS zone](#5-modify-your-dns-zone)
-- [7\. Test the Tunnel](#7-test-the-tunnel)
-- [8\. Convert to a system service](#8-convert-to-a-system-service)
-- [Final Thoughts](#final-thoughts)
-
 ## Why a tunnel?
 
 - Opening up a port on a home network isn’t the greatest idea. It is a security risk, a hole waiting for a hacker/bot to sneak in using a known vulnerability.
