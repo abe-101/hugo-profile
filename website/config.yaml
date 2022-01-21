@@ -59,6 +59,8 @@ params:
 
   # About
   disable_about: false
+  aliases:
+    - /about/
   descripe_l1_person: "I'm Abe"
   descripe_l2_person: "A software engineer and open source enthusiast.
 I love building delightful developer experiences."
