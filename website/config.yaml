@@ -18,6 +18,33 @@ taxonomies:
 
 enableEmoji: true
 
+# menus
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blog
+      weight: 1
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /ew
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /34545
+    #   parent: dropdown
+    #   weight: 2
+
 params:
   version: 3
   customCSS: false
@@ -26,11 +53,6 @@ params:
   description: "Abe's personal portfolio and blog."
   images:
     - "/images/site-feature-image.jpg"
-
-  # Navbar Menus
-  customMenus:
-    - name: "Blog"
-      Url: "/blog"
 
   # home
   disable_home: false
