@@ -1,5 +1,5 @@
 ---
-title: "Live Streaming Solutions"
+title: "The Ultimate Guide To IMPROVE VIDEO STREAMING"
 date: 2021-12-14T11:30:13+05:30
 draft: true
 img: /images/camera.jpg
@@ -8,9 +8,29 @@ github: https://github.com/abe-101/
 featured: /
 ---
 
-Recently at work we transformed our streaming equipment. We went from using a chrome book webcam to top of the line Sony camera.
+## The Ultimate Guide To IMPROVE VIDEO STREAMING
+Recently at our study group we transformed our streaming equipment. We went from using a chrome book webcam to top of the line Sony camera bundled together with a wireless mike and a spot light.
 
-## Sony ZV-E10 Mirrorless Camera
+![old set up](/images/old-setup.jpg)
+
+## Options
+Having realize the quality of a webcam, we considered our options.
+ 1. A proper webcam that connects to the computer
+ 2. A smartphone on a tripod
+ 3. A proper camera and on a tripod and stream directly to youtube
+
+Ultimetly we went with 3, a proper camera on a tripod, although more expensive we got top qaulity equipment.
+
+## Setup
+The setup went like this:
+ - Sony ZV-E10 Mirrorless Camera
+ - Tamron 17-70mm f/2.8 Di III-A VC RXD Lens for Sony E
+ - GEEKOTO AT24EVO Compact Aluminum Tripod
+
+
+
+
+
 
 Perfect for vloggers, the **Sony ZV-E10** pairs a large APS-C sensor and mirrorless versatility with a specialized feature-set built just for content creators. Improving upon the ubiquitous smartphone, the ZV-E10 is an Alpha camera that brings improved image quality, greater choice of lenses, and increased control to up your creativity when shooting.
 
