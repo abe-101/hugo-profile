@@ -84,8 +84,8 @@ params:
   aliases:
     - /about/
   descripe_l1_person: "I'm Abe"
-  descripe_l2_person: "A software engineer and open source enthusiast.
-I love building delightful developer experiences."
+  descripe_l2_person: "A self taught software engineer and open source enthusiast.
+I am passionate about technology and I love building delightful developer experiences."
   skills:
     - name: Python
       percentage: 70
