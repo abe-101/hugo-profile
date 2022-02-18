@@ -33,7 +33,7 @@ This is where [Cloudflare’s](https://www.cloudflare.com/products/tunnel/) tunn
 ## Pre-requisites
 
 - Assumes you already have a domain name configured to use Cloudflare’s DNS service. This is a totally free service.
-- Assumes you already have a Linux server with [Nginx](https://nginx.org/en/) and [Let’s Encrypt](https://letsencrypt.org/), listing on ports 80 and 443.
+- Assumes you already have a Linux server with [Nginx](https://nginx.org/en/) and [Let’s Encrypt](https://letsencrypt.org/).
 
 ## 1\. Install
 
@@ -177,8 +177,6 @@ Then, start the system service with the following command:
 ```
 $ sudo systemctl start cloudflared
 ```
-        } else if (color == Color.BLUE)
-
 And start on boot with:
 
 ```
@@ -197,4 +195,7 @@ The output should be similar to that shown in Step 6 above. You can safely delet
 
 We now have a web-server serving the internet without opening any ports on our network.
 
-Credits: Reddit user : [u/highspeed_usaf](https://www.reddit.com/r/homelab/comments/pnto6g/how_to_selfhosting_and_securing_web_services_out/) and the cloudflare [docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide).
+**Credits:**
+ - Reddit user : [u/highspeed_usaf](https://www.reddit.com/r/homelab/comments/pnto6g/how_to_selfhosting_and_securing_web_services_out/) 
+ - The cloudflare [docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide).
+ - [Boruch Niebloom](https://twitter.com/niebloomj) and [Moshe Uminer](https://github.com/mosheduminer) for correcting mistakes.
