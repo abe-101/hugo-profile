@@ -121,7 +121,7 @@ Do this for each service you want (i.e., subdomain1, subdomain2, etc) hosted thr
 
 Cloudfalres DNS dashboard
 
-## 7\. Test the Tunnel
+## 6\. Test the Tunnel
 
 Run the tunnel to proxy incoming traffic from the tunnel to any number of services running locally on your origin.
 
@@ -144,7 +144,7 @@ If everything’s working, the end of the output should be:
 
 Now, try to access your website and your service from outside your network – for example, a smart phone on cellular connection is an easy way to do this. If your webpage loads, SUCCESS!
 
-## 8\. Convert to a system service
+## 7\. Convert to a system service
 
 You’ll notice if you Ctrl+C out of this last command, the tunnel goes down! That’s not great! We want it up all the time. To do that we turn cloudflared into a service.
 
@@ -177,6 +177,7 @@ Then, start the system service with the following command:
 ```
 $ sudo systemctl start cloudflared
 ```
+        } else if (color == Color.BLUE)
 
 And start on boot with:
 
@@ -190,7 +191,7 @@ Check the status with:
 $ sudo systemctl status cloudflared
 ```
 
-The output should be similar to that shown in Step 7 above. You can safely delete your `~/.cloudflared` directory.
+The output should be similar to that shown in Step 6 above. You can safely delete your `~/.cloudflared` directory.
 
 ## Final Thoughts
 
