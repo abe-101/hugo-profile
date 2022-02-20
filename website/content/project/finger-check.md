@@ -10,8 +10,9 @@ featured: /
 
 
 
-fingercheck.com is an awesome platform fully customizable great HR platform.
+fingercheck.com is an great platform fully customizable great HR platform.
 
+The staff are very accomatating, and willing to help customize the platform to meat your needs.
 The challenge we faced was unique to our companies schedule. We have the employees check in and out multiple times throughout the day.
 Clocking in and out
 For months our company was manually going over the records of when employees checked in and out to calculate when they came late warmest day.
