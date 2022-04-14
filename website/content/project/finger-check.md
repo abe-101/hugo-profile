@@ -1,5 +1,5 @@
 ---
-title: "Finger Check"
+title: "Time Manegment Solution"
 date: 2021-12-30T11:30:13+05:30
 draft: true
 img: /images/finger-check.jpg
@@ -8,7 +8,26 @@ github: https://github.com/abe-101/finger-check
 featured: /
 ---
 
+## Time Consuming Payroll
 
+The payroll team was spending hours sifting through hundreds of logs.
+Their Goal was to find when employees came late or were absent and deduct from their paycheck.
+This was getting more urgent as the amount of employees had just doubled.
+
+## Task
+
+The goal was to remove as much manual work as possible.
+We also set out to better notify the employees of their attendance.
+
+## Action
+
+Automated the process of flagging employee lateness and absents.
+I also implemented a weekly automatic employee report.
+
+## Result
+
+Producing a more accurate report cut down eighty percent of the payroll teams work. 
+The weekly employee reports improved employee attendance.
 
 fingercheck.com is an great platform fully customizable great HR platform.
 
