@@ -17,12 +17,16 @@ featured: https://breakfast.habet.dev
 ---
 
 ## CS50x Final Project
-As part of Harvards CS50x course we had to build our own project. I chose to solve a real world problem. We have a local study group that orders breakfast together. The problem is how can each member select what they want? This app attempts to solve it.
+As part of Harvards CS50x course we had to build our own project.
+I used this opportunity to solve a real world problem.
+In my Community we have a local study group.
+One of the benefits of the group is that breakfast gets delivered from the local bagel shop.
+The problem was the members had no way to choose what they wanted. This app attempts to solve it.
 
 ## Bagel Shop App
 
 The app is built using Python and Flask which depends on the Jinja template engine.
-The idea behind the app is simple, allow members to select breakfast for the week. The web app will send out an email with everyone's choice of breakfast.
+The idea behind the app is simple, allow members to select breakfast for the week. The web app will send out a weekly email to the bagel shop with everyone's choice of breakfast.
 
 ![menu](/images/bagel-shop.png)
 
