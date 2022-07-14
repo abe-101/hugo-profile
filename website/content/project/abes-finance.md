@@ -1,6 +1,6 @@
 ---
 title: "Abe's finance"
-date: 2022-01-10T11:30:13+05:30
+date: 2022-01-5T11:30:13+05:30
 draft: false
 author: "Abe"
 img: /images/finance.jpg
