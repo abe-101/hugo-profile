@@ -1,9 +1,9 @@
 ---
-title: "Time Manegment Solution"
+title: "Attendance Tracker"
 date: 2021-12-30T11:30:13+05:30
 draft: true
 img: /images/finger-check.jpg
-description: "Auto Time Solution"
+description: ""
 github: https://github.com/abe-101/finger-check
 featured: /
 ---
@@ -17,7 +17,7 @@ This was getting more urgent as the amount of employees had just doubled.
 ## Task
 
 The goal was to remove as much manual work as possible.
-We also set out to better notify the employees of their attendance.
+In addition we set out to better notify the employees of their attendance.
 
 ## Action
 
